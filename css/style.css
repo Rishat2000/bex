@@ -488,7 +488,6 @@ textarea.input {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  line-height: 0.75;
   -webkit-transition: opacity 0.3s ease 0s;
   transition: opacity 0.3s ease 0s;
 }
@@ -507,7 +506,7 @@ textarea.input {
 }
 
 .rating__body::before {
-  content: "🟊🟊🟊🟊🟊";
+  content: "★★★★★";
   display: block;
 }
 
@@ -521,13 +520,13 @@ textarea.input {
 }
 
 .rating__active::before {
-  content: "🟊🟊🟊🟊🟊";
+  content: "★★★★★";
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  color: #ffd300;
+  color: #fddb62;
 }
 
 .rating__items {
@@ -1322,19 +1321,19 @@ textarea.input {
 }
 
 .reviews__slider {
-  padding-left: 7.5rem;
   padding-right: 0.9375rem;
 }
 
-.reviews__body {
+.reviews__slide {
   border-radius: 1.875rem;
   border: 1px solid #e9f3ff;
   background: var(--whiteColor);
   word-break: break-word;
   overflow: auto;
+  max-width: 22.5rem;
 }
 
-.reviews__body::-webkit-scrollbar {
+.reviews__slide::-webkit-scrollbar {
   display: none;
 }
 
@@ -1632,7 +1631,7 @@ textarea.input {
   }
 
   .rating {
-    font-size: 1.5625rem;
+    font-size: 1.375rem;
   }
 
   .title {
@@ -1847,10 +1846,6 @@ textarea.input {
     padding-left: 7.5rem;
   }
 
-  .reviews__body {
-    height: 20.625rem;
-  }
-
   .body-reviews__top:not(:last-child) {
     margin-bottom: 1.5625rem;
   }
@@ -1968,13 +1963,13 @@ textarea.input {
 }
 
 @media (min-width: 137.5em) {
-  .reviews__body {
+  .reviews__slide {
     padding: 2.5rem;
   }
 }
 
 @media (max-width: 48em) {
-  .reviews__body {
+  .reviews__slide {
     padding: 1.25rem;
   }
 }
@@ -2248,10 +2243,6 @@ textarea.input {
 
   .reviews__slider {
     padding-left: 1.25rem;
-  }
-
-  .reviews__body {
-    height: 13.625rem;
   }
 
   .body-reviews__top:not(:last-child) {
@@ -2790,15 +2781,15 @@ textarea.input {
     }
 }
 
-@supports (font-size: clamp( 1rem , 0.8407079646rem  +  0.796460177vw , 1.5625rem )) {
+@supports (font-size: clamp( 1rem , 0.8938053097rem  +  0.5309734513vw , 1.375rem )) {
     .rating {
-      font-size: clamp( 1rem , 0.8407079646rem  +  0.796460177vw , 1.5625rem );
+      font-size: clamp( 1rem , 0.8938053097rem  +  0.5309734513vw , 1.375rem );
     }
 }
 
-@supports not (font-size: clamp( 1rem , 0.8407079646rem  +  0.796460177vw , 1.5625rem )) {
+@supports not (font-size: clamp( 1rem , 0.8938053097rem  +  0.5309734513vw , 1.375rem )) {
     .rating {
-      font-size: calc(1rem + 0.5625 * (100vw - 20rem) / 70.625);
+      font-size: calc(1rem + 0.375 * (100vw - 20rem) / 70.625);
     }
 }
 
@@ -3434,18 +3425,6 @@ textarea.input {
     }
 }
 
-@supports (height: clamp( 13.625rem , 11.642699115rem  +  9.9115044248vw , 20.625rem )) {
-    .reviews__body {
-      height: clamp( 13.625rem , 11.642699115rem  +  9.9115044248vw , 20.625rem );
-    }
-}
-
-@supports not (height: clamp( 13.625rem , 11.642699115rem  +  9.9115044248vw , 20.625rem )) {
-    .reviews__body {
-      height: calc(13.625rem + 7 * (100vw - 20rem) / 70.625);
-    }
-}
-
 @supports (margin-bottom: clamp( 0.6875rem , 0.4397123894rem  +  1.2389380531vw , 1.5625rem )) {
     .body-reviews__top:not(:last-child) {
       margin-bottom: clamp( 0.6875rem , 0.4397123894rem  +  1.2389380531vw , 1.5625rem );
@@ -3873,13 +3852,13 @@ textarea.input {
 
 @media (min-width: 48em) and (max-width: 137.5em) {
 @supports (padding: clamp( 1.25rem , 0.5796089385rem  +  1.3966480447vw , 2.5rem )) {
-    .reviews__body {
+    .reviews__slide {
       padding: clamp( 1.25rem , 0.5796089385rem  +  1.3966480447vw , 2.5rem );
     }
 }
 
 @supports not (padding: clamp( 1.25rem , 0.5796089385rem  +  1.3966480447vw , 2.5rem )) {
-    .reviews__body {
+    .reviews__slide {
       padding: calc(1.25rem + 1.25 * (100vw - 48rem) / 89.5);
     }
 }
