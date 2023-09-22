@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230922111422">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230922213838">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,12 +20,12 @@
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" data-goto=".currency" class="menu__link">Exchange</a></li>
-							<li class="menu__item"><a href="#" data-goto=".avantages" class="menu__link">Guarantees</a></li>
-							<li class="menu__item"><a href="#" data-goto=".reviews" class="menu__link">Reviews</a></li>
-							<li class="menu__item"><a href="#" data-goto=".questions" class="menu__link">FAQ</a></li>
-							<li class="menu__item"><a href="#" data-goto=".best" class="menu__link">About us</a></li>
-							<li class="menu__item"><a href="#" data-goto=".contacts" class="menu__link">Contacts</a></li>
+							<li class="menu__item"><a href="#" data-goto=".currency" data-goto-header class="menu__link">Exchange</a></li>
+							<li class="menu__item"><a href="#" data-goto=".avantages" data-goto-header class="menu__link">Guarantees</a></li>
+							<li class="menu__item"><a href="#" data-goto=".reviews" data-goto-header class="menu__link">Reviews</a></li>
+							<li class="menu__item"><a href="#" data-goto=".questions" data-goto-header class="menu__link">FAQ</a></li>
+							<li class="menu__item"><a href="#" data-goto=".best" data-goto-header class="menu__link">About us</a></li>
+							<li class="menu__item"><a href="#" data-goto=".contacts" data-goto-header class="menu__link">Contacts</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -181,7 +181,7 @@
 					<input autocomplete="off" type="text" name="form[]" placeholder="You get" class="currency__input input">
 				</form>
 	</div>
-	<button class="currency__button button button--fw">
+	<button type="button" data-popup="#popup" class="currency__button button button--fw">
 		<p>Send a request</p> <img src="img/icons/telegram.svg" alt>
 	</button>
 	</div>
@@ -530,13 +530,13 @@
 			<h2 class="contacts__title title title--black">Contacts</h2>
 			<div class="contacts__row">
 				<div class="contacts__column">
-					<a href="#" class="contacts__button button">Make an exchange</a>
+					<a href="https://t.me/jp_morgan_stanley" target="_blank" class="contacts__button button">Make an exchange</a>
 				</div>
 				<div class="contacts__column">
-					<a href="#" class="contacts__button button">Ask a question to the support</a>
+					<a href="https://t.me/jp_morgan_stanley" target="_blank" class="contacts__button button">Ask a question to the support</a>
 				</div>
 				<div class="contacts__column">
-					<a href="#" class="contacts__button button">Our channel</a>
+					<a href="https://t.me/best_exchange_ru" target="_blank" class="contacts__button button">Our channel</a>
 				</div>
 			</div>
 		</div>
@@ -581,7 +581,7 @@
 			<input autocomplete="off" type="text" name="form[]" placeholder="You get" class="currency__input currency__input--center input">
 		</form>
 		</div>
-		<button type="button" class="currency__button currency__button--center button button--fw button--center">
+		<button type="button" data-popup="#popup" class="currency__button currency__button--center button button--fw button--center">
 			<p>Send a request</p> <img src="img/icons/telegram.svg" alt>
 		</button>
 		</div>
@@ -619,8 +619,23 @@
 		</div>
 	</footer>
 	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js?_v=20230922111422" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
-	<script src="js/app.min.js?_v=20230922111422"></script>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<form action="#" class="popup__form">
+						<textarea required name="message" data-autoheight data-autoheight-min="100" class="popup__input">Hello, I want to make an exchange!</textarea>
+						<button class="popup__button button button--fw" type="submit">
+							<p>Send a request</p> <img src="img/icons/telegram.svg" alt>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js?_v=20230922213838" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20230922213838"></script>
 </body>
 
 </html>
