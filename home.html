@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230926121041">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230926223655">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -308,7 +308,7 @@
 									<p>В течение какого времени приходят деньги?</p>
 								</summary>
 								<div class="questions__spollers-body spollers__body">
-									<p>Обычно обмен занимает от 5 до 15 минут. В отдельных случаях это может достигать максимум часа. В зависимости от загруженности нашего сервиса.</p>
+									<p>Обычно обмен занимает от 5 до 15 минут. В отдельных случаях это может достигать максимум до 1 часа. В зависимости от загруженности нашего сервиса.</p>
 								</div>
 							</details>
 							<details class="questions__spollers-item spollers__item">
@@ -316,7 +316,7 @@
 									<p>Где я могу увидеть список валют?</p>
 								</summary>
 								<div class="questions__spollers-body spollers__body">
-									<p>Весь список вы можете найти на нашем телеграмм канале с актуальным курсом. Обновление ежедневно </p>
+									<p>Весь список Вы можете найти в нашем телеграмм канале с актуальным курсом. Обновление проиходят ежедневно.</p>
 								</div>
 							</details>
 							<details class="questions__spollers-item spollers__item">
@@ -324,7 +324,7 @@
 									<p>Какая максимальная сумма перевода?</p>
 								</summary>
 								<div class="questions__spollers-body spollers__body">
-									<p>Мы имеем одни из самых больших резервов и можем подстроиться даже под самого требовательного клиента</p>
+									<p>Мы имеем одни из самых больших резервов и можем подстроиться даже под самого требовательного клиента.</p>
 								</div>
 							</details>
 							<details class="questions__spollers-item spollers__item">
@@ -332,7 +332,7 @@
 									<p>Я хочу обменять 100 000 долларов, но меня смущает депозит 1500 долларов. Нет желания его вносить до реальной встречи</p>
 								</summary>
 								<div class="questions__spollers-body spollers__body">
-									<p>Это обязательное условие нашего сервиса, потому что к сожалению было очень много фейковых заявок и курьер приезжал просто так на место сделки. Вы освобождены от этого условия, если совершали обмен через наш сервис ранее.</p>
+									<p>Это обязательное условие нашего сервиса, в связи с большим колличеством фейковых заявок. Наш сервис теряет убытки за курьерскую службу и охрану Ваших средств. Вы освобождены от этого условия, если совершали обмен через наш сервис ранее.</p>
 								</div>
 							</details>
 							<details class="questions__spollers-item spollers__item">
@@ -340,7 +340,7 @@
 									<p>Возможно обменять сумму менее 5000 долларов?</p>
 								</summary>
 								<div class="questions__spollers-body spollers__body">
-									<p>К сожалению заявки на обмен валюты менее 5000 долларов и обмен криптовалюты менее 10 000 долларов мы не принимаем</p>
+									<p>К сожалению заявки на обмен валюты менее $5000 и обмен криптовалюты менее $10.000 долларов мы не принимаем.</p>
 								</div>
 							</details>
 							<details class="questions__spollers-item spollers__item">
@@ -348,7 +348,7 @@
 									<p>Какие гарантии, что я отправляю свои деньги и получаю от вас перевод?</p>
 								</summary>
 								<div class="questions__spollers-body spollers__body">
-									<p>Гарантия - это репутация нашего сервиса и многочисленные отзывы довольных клиентов. Наш телеграмм канал является самым первым обменником по дате создания в русско-язычном сообществе США. Где никогда не менялось его название, либо ник профиля администратора за полтора года работы. Скам обменники «живут» максимум месяц; после чего их блокируют за многочисленные жалобы.</p>
+									<p>Наша гарантия - это репутация сервиса и многочисленные отзывы довольных клиентов. Наш телеграмм канал является самым первым обменником по дате создания в русско-язычном сообществе США. Никогда не менялось название, ник профиля администратора за полтора года работы.</p>
 								</div>
 							</details>
 						</div>
@@ -413,58 +413,55 @@
 								</option>
 								<option value="ETH" data-asset="img/cripto/eth.jpg">
 									<p>ETH</p>
+								</option>
+								<option value="TON" data-asset="img/cripto/ton.jpg">
+									<p>TON</p>
+								</option>
+								<option value="USDT" data-asset="img/cripto/usdt.jpg">
+									<p>USDT</p>
+								</option>
+							</select>
+							<form action="#" class="currency__form">
+								<input autocomplete="off" type="text" name="form[]" placeholder="Получаете" class="currency__input currency__input--center input">
+							</form>
 						</div>
-						</option>
-						<option value="TON" data-asset="img/cripto/ton.jpg">
-							<p>TON</p>
+						<button type="button" data-popup="#popup" class="currency__button currency__button--center button button--fw">
+							<p>Отправить заявку</p> <img src="img/icons/telegram.svg" alt>
+						</button>
 					</div>
-					</option>
-					<option value="USDT" data-asset="img/cripto/usdt.jpg">
-						<p>USDT</p>
 				</div>
-				</option>
-				</select>
-				<form action="#" class="currency__form">
-					<input autocomplete="off" type="text" name="form[]" placeholder="Получаете" class="currency__input currency__input--center input">
-				</form>
-	</div>
-	<button type="button" data-popup="#popup" class="currency__button currency__button--center button button--fw">
-		<p>Отправить заявку</p> <img src="img/icons/telegram.svg" alt>
-	</button>
-	</div>
-	</div>
-	</section>
-	</main>
-	<footer class="footer">
-		<div class="footer__container">
-			<div data-goto=".exchange" class="footer__logo _icon-logo"></div>
-			<div class="footer__menu menu">
-				<nav class="menu__body">
-					<ul class="menu__list">
-						<li class="menu__item"><a href="#" data-goto=".currency" class="menu__link">Обмен</a></li>
-						<li class="menu__item"><a href="#" data-goto=".avantages" class="menu__link">Гарантии</a></li>
-						<li class="menu__item"><a href="#" data-goto=".reviews" class="menu__link">Отзывы</a></li>
-						<li class="menu__item"><a href="#" data-goto=".questions" class="menu__link">FAQ</a></li>
-						<li class="menu__item"><a href="#" data-goto=".best" class="menu__link">О нас</a></li>
-						<li class="menu__item"><a href="#" data-goto=".contacts" class="menu__link">Контакты</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div data-spollers class="header-spollers">
-				<details class="header-spollers__item">
-					<summary data-spoller-close class="header-spollers__title"><span class="_icon-lang"></span>RU</summary>
-					<div class="header-spollers__body">
-						<div class="header-spollers__image-ibg"><picture><source data-srcset="img/countries/usd.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/countries/usd.jpg" alt="en-icon"></picture>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div data-goto=".exchange" class="footer__logo _icon-logo"></div>
+				<div class="footer__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" data-goto=".currency" class="menu__link">Обмен</a></li>
+							<li class="menu__item"><a href="#" data-goto=".avantages" class="menu__link">Гарантии</a></li>
+							<li class="menu__item"><a href="#" data-goto=".reviews" class="menu__link">Отзывы</a></li>
+							<li class="menu__item"><a href="#" data-goto=".questions" class="menu__link">FAQ</a></li>
+							<li class="menu__item"><a href="#" data-goto=".best" class="menu__link">О нас</a></li>
+							<li class="menu__item"><a href="#" data-goto=".contacts" class="menu__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div data-spollers class="header-spollers">
+					<details class="header-spollers__item">
+						<summary data-spoller-close class="header-spollers__title"><span class="_icon-lang"></span>RU</summary>
+						<div class="header-spollers__body">
+							<div class="header-spollers__image-ibg"><picture><source data-srcset="img/countries/usd.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/countries/usd.jpg" alt="en-icon"></picture>
+							</div>
+							<a href="homeEn.html" class="header-spollers__link">EN</a>
 						</div>
-						<a href="homeEn.html" class="header-spollers__link">EN</a>
-					</div>
-				</details>
+					</details>
+				</div>
 			</div>
-		</div>
-		<div class="footer__bottom">
-			<p>© 2013-2023 Best Exchange</p>
-		</div>
-	</footer>
+			<div class="footer__bottom">
+				<p>© 2013-2023 Best Exchange</p>
+			</div>
+		</footer>
 	</div>
 	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
@@ -481,8 +478,8 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js?_v=20230926121041" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
-	<script src="js/app.min.js?_v=20230926121041"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js?_v=20230926223655" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20230926223655"></script>
 </body>
 
 </html>
