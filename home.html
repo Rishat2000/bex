@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230922222603">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230926121041">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,94 +55,12 @@
 				</div>
 			</section>
 			<section class="standard">
-				<ul class="standard__list">
-					<li class="standard__item">
-						<div class="standard__coin-name">ETH</div>
-						<div class="standard__coin-price">$1.848</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">TON</div>
-						<div class="standard__coin-price">$1.848</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">USDT</div>
-						<div class="standard__coin-price">97.58 ₽</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">CAD</div>
-						<div class="standard__coin-price">72.54 ₽</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">BTC</div>
-						<div class="standard__coin-price">29.398</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">ETH</div>
-						<div class="standard__coin-price">$1.848</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">TON</div>
-						<div class="standard__coin-price">$1.848</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">USDT</div>
-						<div class="standard__coin-price">97.58 ₽</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">CAD</div>
-						<div class="standard__coin-price">72.54 ₽</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">BTC</div>
-						<div class="standard__coin-price">29.398</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">ETH</div>
-						<div class="standard__coin-price">$1.848</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">TON</div>
-						<div class="standard__coin-price">$1.848</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">USDT</div>
-						<div class="standard__coin-price">97.58 ₽</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">CAD</div>
-						<div class="standard__coin-price">72.54 ₽</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">BTC</div>
-						<div class="standard__coin-price">29.398</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">ETH</div>
-						<div class="standard__coin-price">$1.848</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">TON</div>
-						<div class="standard__coin-price">$1.848</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">USDT</div>
-						<div class="standard__coin-price">97.58 ₽</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">CAD</div>
-						<div class="standard__coin-price">72.54 ₽</div>
-					</li>
-					<li class="standard__item">
-						<div class="standard__coin-name">BTC</div>
-						<div class="standard__coin-price">29.398</div>
-					</li>
-				</ul>
+				<ul class="standard__list standard__list_first"></ul>
+				<ul class="standard__list standard__list_second"></ul>
 			</section>
 			<section class="currency">
 				<div class="currency__container">
-					<h2 class="currency__title title">
-						Обмен валюты
-					</h2>
+					<h2 class="currency__title title"> Обмен валюты </h2>
 					<div data-one-select class="currency__row">
 						<div class="currency__column">
 							<select data-scroll name="form[]" data-class-modif="first">
@@ -166,6 +84,335 @@
 								</option>
 								<option value="ETH" data-asset="img/cripto/eth.jpg">
 									<p>ETH</p>
+								</option>
+								<option value="TON" data-asset="img/cripto/ton.jpg">
+									<p>TON</p>
+								</option>
+								<option value="USDT" data-asset="img/cripto/usdt.jpg">
+									<p>USDT</p>
+								</option>
+							</select>
+							<form action="#" class="currency__form">
+								<input autocomplete="off" type="text" name="form[]" placeholder="Получаете" class="currency__input input">
+							</form>
+						</div>
+						<button type="button" data-popup="#popup" class="currency__button button button--fw">
+							<p>Отправить заявку</p> <img src="img/icons/telegram.svg" alt>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="avantages">
+				<div class="avantages__container">
+					<h2 class="avantages__title title title--black">Наши гарантии и преимущества</h2>
+					<div class="avantages__sub-title">Мы имеем безупречную репутацию c 2013 года по обмену денежных средств в любой точке мира.</div>
+					<div class="avantages__row">
+						<div class="avantages__column column-avantages">
+							<div class="column-avantages__image-ibg column-avantages__image-ibg--first"><picture><source data-srcset="img/advatages/shield.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/advatages/shield.jpg" alt="shield"></picture></div>
+							<div class="column-avantages__title">Гарантия Вашей безопасности и анонимности</div>
+							<div class="column-avantages__sub-title">Мы имеем безупречную репутацию c 2013 года по обмену денежных средств. </div>
+						</div>
+						<div class="avantages__column column-avantages">
+							<div class="column-avantages__image-ibg column-avantages__image-ibg--second"><picture><source data-srcset="img/advatages/wallet.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/advatages/wallet.jpg" alt="wallet"></picture></div>
+							<div class="column-avantages__title">Выплаты в кратчайшие сроки удобным для Вас способом</div>
+							<div class="column-avantages__sub-title">Работа с любой криптовалютой. Обмен BTC, USDT</div>
+						</div>
+						<div class="avantages__column column-avantages">
+							<div class="column-avantages__image-ibg column-avantages__image-ibg--third"><picture><source data-srcset="img/advatages/star.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/advatages/star.jpg" alt="star"></picture></div>
+							<div class="column-avantages__title">Гарантия качественного материала</div>
+							<div class="column-avantages__sub-title">Предоставление только чистых и новых реквизитов. Происхождение денежных средств значения не имеет.</div>
+						</div>
+						<div class="avantages__column column-avantages">
+							<div class="column-avantages__image-ibg column-avantages__image-ibg--fourth"><picture><source data-srcset="img/advatages/rocket.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/advatages/rocket.jpg" alt="rocket"></picture></div>
+							<div class="column-avantages__title">Профессиональная и опытная команда</div>
+							<div class="column-avantages__sub-title">Максимально быстро решаем поставленные задачи. Оперативно даем обратную связь.</div>
+						</div>
+						<div class="avantages__column column-avantages">
+							<div class="column-avantages__image-ibg column-avantages__image-ibg--fifth"><picture><source data-srcset="img/advatages/chat.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/advatages/chat.jpg" alt="chat"></picture></div>
+							<div class="column-avantages__title">VIP-поддержка каждого клиента</div>
+							<div class="column-avantages__sub-title">Работа 24/7 365 дней. Бесплатные консультации.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="reviews__container reviews__container--swiper">
+					<h2 class="reviews__title title">Что говорят наши клиенты</h2>
+					<div class="reviews__slider swiper">
+						<div class="reviews__wrapper swiper-wrapper">
+							<div class="reviews__slide body-reviews swiper-slide">
+								<div class="body-reviews__top top-reviews">
+									<div class="top-reviews__date">25.07.23</div>
+									<div class="top-reviews__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">5</div> <!-- Можно просто менять оценку, изменяя цифру -->
+									</div>
+								</div>
+								<div class="body-reviews__bottom bottom-reviews">
+									<div class="bottom-reviews__title">Игорь Иванович</div>
+									<div class="bottom-reviews__sub-title"> Был в Москве в командировке на прошлой неделе и столкнулся с проблемой обмена валюты. Этот обменник мне порекомендовали местные жители. Хочу сказать спасибо сотруднику за приятный сервис. Он проверил мои купюры и выдал нужную сумму. Если еще приеду сюда и возникнет необходимость обменять валюту, то я без раздумий к вам! </div>
+								</div>
+							</div>
+							<div class="reviews__slide body-reviews swiper-slide">
+								<div class="body-reviews__top top-reviews">
+									<div class="top-reviews__date">15.08.23</div>
+									<div class="top-reviews__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">5</div> <!-- Можно просто менять оценку, изменяя цифру -->
+									</div>
+								</div>
+								<div class="body-reviews__bottom bottom-reviews">
+									<div class="bottom-reviews__title">Наталья</div>
+									<div class="bottom-reviews__sub-title"> Обменник нравится, меняла здесь евро на рубли уже 4 раза. По курсу они явно выигрывают у всех остальных, и по уровню обслуживания тоже. Обмен быстрый, купюры хорошие, не изношенные. </div>
+								</div>
+							</div>
+							<div class="reviews__slide body-reviews swiper-slide">
+								<div class="body-reviews__top top-reviews">
+									<div class="top-reviews__date">04.08.23</div>
+									<div class="top-reviews__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">5</div> <!-- Можно просто менять оценку, изменяя цифру -->
+									</div>
+								</div>
+								<div class="body-reviews__bottom bottom-reviews">
+									<div class="bottom-reviews__title">Михаил</div>
+									<div class="bottom-reviews__sub-title"> Ничего плохого за данный обменник сказать не могу. Пользуюсь им уже довольно давно. Никаких проблем. Курс администраторы постоянно обновляют. Процент на вывод мизерный. Рекомендую. </div>
+								</div>
+							</div>
+							<div class="reviews__slide body-reviews swiper-slide">
+								<div class="body-reviews__top top-reviews">
+									<div class="top-reviews__date">29.07.23</div>
+									<div class="top-reviews__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">5</div> <!-- Можно просто менять оценку, изменяя цифру -->
+									</div>
+								</div>
+								<div class="body-reviews__bottom bottom-reviews">
+									<div class="bottom-reviews__title">Mark</div>
+									<div class="bottom-reviews__sub-title"> I came to Moscow as a tourist and a friend recommended this currency exchange. The course is good and the service is even better. </div>
+								</div>
+							</div>
+							<div class="reviews__slide body-reviews swiper-slide">
+								<div class="body-reviews__top top-reviews">
+									<div class="top-reviews__date">17.08.23</div>
+									<div class="top-reviews__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">5</div> <!-- Можно просто менять оценку, изменяя цифру -->
+									</div>
+								</div>
+								<div class="body-reviews__bottom bottom-reviews">
+									<div class="bottom-reviews__title">Денис</div>
+									<div class="bottom-reviews__sub-title"> Отличный обменник! Приятный курс, всегда наличка в наличии. Быстрые и безопасные сделки. Рекомендую! </div>
+								</div>
+							</div>
+							<div class="reviews__slide body-reviews swiper-slide">
+								<div class="body-reviews__top top-reviews">
+									<div class="top-reviews__date">17.07.23</div>
+									<div class="top-reviews__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">5</div> <!-- Можно просто менять оценку, изменяя цифру -->
+									</div>
+								</div>
+								<div class="body-reviews__bottom bottom-reviews">
+									<div class="bottom-reviews__title">Артем</div>
+									<div class="bottom-reviews__sub-title">Хочу оставить отзыв о сайте best exchange. Решил попробовать данный тип обмена, так как недавно о нем узнал и остался очень доволен после использования. Как оказалось это действительно удобно и обмен валют прошел по выгодному курсу, который даже лучше чем в банках. Буду и в дальнейшем пользоваться обменником и рекомендовать знакомым и друзьям.</div>
+								</div>
+							</div>
+							<div class="reviews__slide body-reviews swiper-slide">
+								<div class="body-reviews__top top-reviews">
+									<div class="top-reviews__date">15.07.23</div>
+									<div class="top-reviews__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">5</div> <!-- Можно просто менять оценку, изменяя цифру -->
+									</div>
+								</div>
+								<div class="body-reviews__bottom bottom-reviews">
+									<div class="bottom-reviews__title">Саша</div>
+									<div class="bottom-reviews__sub-title">Обмен валют работает круглые сутки, хорошо что можно всегда позвонить забронировать сумму и даже номинал купюр.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="questions">
+				<div class="questions__container">
+					<div class="questions__body">
+						<h2 class="questions__title title  title--black">Часто задаваемые вопросы</h2>
+						<div data-spollers data-one-spoller class="questions__spollers spollers">
+							<details data-open class="questions__spollers-item spollers__item">
+								<summary class="questions__spollers-title spollers__title">
+									<p>В течение какого времени приходят деньги?</p>
+								</summary>
+								<div class="questions__spollers-body spollers__body">
+									<p>Обычно обмен занимает от 5 до 15 минут. В отдельных случаях это может достигать максимум часа. В зависимости от загруженности нашего сервиса.</p>
+								</div>
+							</details>
+							<details class="questions__spollers-item spollers__item">
+								<summary data-spoller-close class="questions__spollers-title spollers__title">
+									<p>Где я могу увидеть список валют?</p>
+								</summary>
+								<div class="questions__spollers-body spollers__body">
+									<p>Весь список вы можете найти на нашем телеграмм канале с актуальным курсом. Обновление ежедневно </p>
+								</div>
+							</details>
+							<details class="questions__spollers-item spollers__item">
+								<summary data-spoller-close class="questions__spollers-title spollers__title">
+									<p>Какая максимальная сумма перевода?</p>
+								</summary>
+								<div class="questions__spollers-body spollers__body">
+									<p>Мы имеем одни из самых больших резервов и можем подстроиться даже под самого требовательного клиента</p>
+								</div>
+							</details>
+							<details class="questions__spollers-item spollers__item">
+								<summary data-spoller-close class="questions__spollers-title spollers__title">
+									<p>Я хочу обменять 100 000 долларов, но меня смущает депозит 1500 долларов. Нет желания его вносить до реальной встречи</p>
+								</summary>
+								<div class="questions__spollers-body spollers__body">
+									<p>Это обязательное условие нашего сервиса, потому что к сожалению было очень много фейковых заявок и курьер приезжал просто так на место сделки. Вы освобождены от этого условия, если совершали обмен через наш сервис ранее.</p>
+								</div>
+							</details>
+							<details class="questions__spollers-item spollers__item">
+								<summary data-spoller-close class="questions__spollers-title spollers__title">
+									<p>Возможно обменять сумму менее 5000 долларов?</p>
+								</summary>
+								<div class="questions__spollers-body spollers__body">
+									<p>К сожалению заявки на обмен валюты менее 5000 долларов и обмен криптовалюты менее 10 000 долларов мы не принимаем</p>
+								</div>
+							</details>
+							<details class="questions__spollers-item spollers__item">
+								<summary data-spoller-close class="questions__spollers-title spollers__title">
+									<p>Какие гарантии, что я отправляю свои деньги и получаю от вас перевод?</p>
+								</summary>
+								<div class="questions__spollers-body spollers__body">
+									<p>Гарантия - это репутация нашего сервиса и многочисленные отзывы довольных клиентов. Наш телеграмм канал является самым первым обменником по дате создания в русско-язычном сообществе США. Где никогда не менялось его название, либо ник профиля администратора за полтора года работы. Скам обменники «живут» максимум месяц; после чего их блокируют за многочисленные жалобы.</p>
+								</div>
+							</details>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="best">
+				<div class="best__container">
+					<div class="best__image-ibg"><picture><source data-srcset="img/exchange/exchange.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/exchange/exchange.jpg" alt="image"></picture></div>
+					<div class="best__text">
+						<h4 class="best__title">Best Exchange</h4>
+						<div class="best__sub-title">
+							<p>Так же мы берём минимальную комиссию за белые переводы из США в Россию и из России в США. Всего 2%! (Вместо 15% по рынку) удобное и оперативное получение денежных средств наличными в крупных городах, банковский перевод , криптовалюты. Комиссия за переводы сомнительного происхождения начинается от 25%.</p>
+						</div>
+						<div class="best__transform">
+							<p>Минимальные суммы перевода:</p>
+							<p>- от $5000 для физ. Лиц</p>
+							<p>- от $25 000 для юр. Лиц</p>
+							<p>Переводы от $250 000 строго через гарант форума.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="contacts__container">
+					<h2 class="contacts__title title title--black">Контакты</h2>
+					<div class="contacts__row">
+						<div class="contacts__column">
+							<a href="https://t.me/jp_morgan_stanley" target="_blank" class="contacts__button button">Сделать обмен</a>
+						</div>
+						<div class="contacts__column">
+							<a href="https://t.me/jp_morgan_stanley" target="_blank" class="contacts__button button">Задать вопрос саппорту</a>
+						</div>
+						<div class="contacts__column">
+							<a href="https://t.me/best_exchange_ru" target="_blank" class="contacts__button button">Наш канал</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="currency currency--center">
+				<div class="currency__container">
+					<div data-one-select class="currency__row currency__row--center">
+						<div class="currency__column currency__column--center">
+							<select data-scroll name="form[]" data-class-modif="third">
+								<option value="USD" selected data-asset="img/countries/usd.jpg">USD</option>
+								<option value="THD" data-asset="img/countries/thb.jpg">THD</option>
+								<option value="GBR" data-asset="img/countries/gbr.jpg">GBR</option>
+								<option value="EUR" data-asset="img/countries/eur.jpg">EUR</option>
+								<option value="CHY" data-asset="img/countries/chy.jpg">CHY</option>
+								<option value="CAD" data-asset="img/countries/cad.jpg">CAD</option>
+								<option value="AED" data-asset="img/countries/aed.jpg">AED</option>
+							</select>
+							<form action="#" class="currency__form currency__form--center">
+								<input autocomplete="off" type="text" name="form[]" placeholder="Отдаете" class="currency__input currency__input--center input">
+							</form>
+						</div>
+						<button type="button" class="currency__switch currency__switch--center _icon-arrows"></button>
+						<div class="currency__column currency__column--center">
+							<select data-scroll name="form[]" data-class-modif="fourth">
+								<option value="BTC" selected data-asset="img/cripto/btc.jpg" data-class="select-btc">
+									<p>BTC</p>
+								</option>
+								<option value="ETH" data-asset="img/cripto/eth.jpg">
+									<p>ETH</p>
 						</div>
 						</option>
 						<option value="TON" data-asset="img/cripto/ton.jpg">
@@ -178,354 +425,14 @@
 				</option>
 				</select>
 				<form action="#" class="currency__form">
-					<input autocomplete="off" type="text" name="form[]" placeholder="Получаете" class="currency__input input">
+					<input autocomplete="off" type="text" name="form[]" placeholder="Получаете" class="currency__input currency__input--center input">
 				</form>
 	</div>
-	<button type="button" data-popup="#popup" class="currency__button button button--fw">
+	<button type="button" data-popup="#popup" class="currency__button currency__button--center button button--fw">
 		<p>Отправить заявку</p> <img src="img/icons/telegram.svg" alt>
 	</button>
 	</div>
 	</div>
-	</section>
-	<section class="avantages">
-		<div class="avantages__container">
-			<h2 class="avantages__title title title--black">Наши гарантии и преимущества</h2>
-			<div class="avantages__sub-title">Мы имеем безупречную репутацию c 2013 года по обмену денежных средств в любой точке мира.</div>
-			<div class="avantages__row">
-				<div class="avantages__column column-avantages">
-					<div class="column-avantages__image-ibg column-avantages__image-ibg--first"><picture><source data-srcset="img/advatages/shield.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/advatages/shield.jpg" alt="shield"></picture></div>
-					<div class="column-avantages__title">Гарантия Вашей безопасности и анонимности</div>
-					<div class="column-avantages__sub-title">Мы имеем безупречную репутацию c 2013 года по обмену денежных средств. </div>
-				</div>
-				<div class="avantages__column column-avantages">
-					<div class="column-avantages__image-ibg column-avantages__image-ibg--second"><picture><source data-srcset="img/advatages/wallet.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/advatages/wallet.jpg" alt="wallet"></picture></div>
-					<div class="column-avantages__title">Выплаты в кратчайшие сроки удобным для Вас способом</div>
-					<div class="column-avantages__sub-title">Работа с любой криптовалютой. Обмен BTC, USDT</div>
-				</div>
-				<div class="avantages__column column-avantages">
-					<div class="column-avantages__image-ibg column-avantages__image-ibg--third"><picture><source data-srcset="img/advatages/star.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/advatages/star.jpg" alt="star"></picture></div>
-					<div class="column-avantages__title">Гарантия качественного материала</div>
-					<div class="column-avantages__sub-title">Предоставление только чистых и новых реквизитов. Происхождение денежных средств значения не имеет.</div>
-				</div>
-				<div class="avantages__column column-avantages">
-					<div class="column-avantages__image-ibg column-avantages__image-ibg--fourth"><picture><source data-srcset="img/advatages/rocket.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/advatages/rocket.jpg" alt="rocket"></picture></div>
-					<div class="column-avantages__title">Профессиональная и опытная команда</div>
-					<div class="column-avantages__sub-title">Максимально быстро решаем поставленные задачи. Оперативно даем обратную связь.</div>
-				</div>
-				<div class="avantages__column column-avantages">
-					<div class="column-avantages__image-ibg column-avantages__image-ibg--fifth"><picture><source data-srcset="img/advatages/chat.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/advatages/chat.jpg" alt="chat"></picture></div>
-					<div class="column-avantages__title">VIP-поддержка каждого клиента</div>
-					<div class="column-avantages__sub-title">Работа 24/7 365 дней. Бесплатные консультации.</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="reviews">
-		<div class="reviews__container reviews__container--swiper">
-			<h2 class="reviews__title title">Что говорят наши клиенты</h2>
-			<div class="reviews__slider swiper">
-				<div class="reviews__wrapper swiper-wrapper">
-					<div class="reviews__slide body-reviews swiper-slide">
-						<div class="body-reviews__top top-reviews">
-							<div class="top-reviews__date">17.08.23</div>
-							<div class="top-reviews__rating rating rating_set">
-								<div class="rating__body">
-									<div class="rating__active"></div>
-									<div class="rating__items">
-										<input type="radio" class="rating__item" value="1" name="rating">
-										<input type="radio" class="rating__item" value="2" name="rating">
-										<input type="radio" class="rating__item" value="3" name="rating">
-										<input type="radio" class="rating__item" value="4" name="rating">
-										<input type="radio" class="rating__item" value="5" name="rating">
-									</div>
-								</div>
-								<div class="rating__value">5</div> <!-- Можно просто менять оценку, изменяя цифру -->
-							</div>
-						</div>
-						<div class="body-reviews__bottom bottom-reviews">
-							<div class="bottom-reviews__title">client #2492871</div>
-							<div class="bottom-reviews__sub-title">Двойной интеграл уравновешивает расходящийся ряд. Эти слова совершенно справедливы, однако нормальное распределение осмысленно имитирует гипнотический рифф. Адажио реально просветляет равновероятный цикл. Живая сессия фактурна.</div>
-						</div>
-					</div>
-					<div class="reviews__slide body-reviews swiper-slide">
-						<div class="body-reviews__top top-reviews">
-							<div class="top-reviews__date">17.08.23</div>
-							<div class="top-reviews__rating rating rating_set">
-								<div class="rating__body">
-									<div class="rating__active"></div>
-									<div class="rating__items">
-										<input type="radio" class="rating__item" value="1" name="rating">
-										<input type="radio" class="rating__item" value="2" name="rating">
-										<input type="radio" class="rating__item" value="3" name="rating">
-										<input type="radio" class="rating__item" value="4" name="rating">
-										<input type="radio" class="rating__item" value="5" name="rating">
-									</div>
-								</div>
-								<div class="rating__value">5</div> <!-- Можно просто менять оценку, изменяя цифру -->
-							</div>
-						</div>
-						<div class="body-reviews__bottom bottom-reviews">
-							<div class="bottom-reviews__title">client #2492871</div>
-							<div class="bottom-reviews__sub-title">Двойной интеграл уравновешивает расходящийся ряд. Эти слова совершенно справедливы, однако нормальное распределение осмысленно имитирует гипнотический рифф. Адажио реально просветляет равновероятный цикл. Живая сессия фактурна.</div>
-						</div>
-					</div>
-					<div class="reviews__slide body-reviews swiper-slide">
-						<div class="body-reviews__top top-reviews">
-							<div class="top-reviews__date">17.08.23</div>
-							<div class="top-reviews__rating rating rating_set">
-								<div class="rating__body">
-									<div class="rating__active"></div>
-									<div class="rating__items">
-										<input type="radio" class="rating__item" value="1" name="rating">
-										<input type="radio" class="rating__item" value="2" name="rating">
-										<input type="radio" class="rating__item" value="3" name="rating">
-										<input type="radio" class="rating__item" value="4" name="rating">
-										<input type="radio" class="rating__item" value="5" name="rating">
-									</div>
-								</div>
-								<div class="rating__value">5</div> <!-- Можно просто менять оценку, изменяя цифру -->
-							</div>
-						</div>
-						<div class="body-reviews__bottom bottom-reviews">
-							<div class="bottom-reviews__title">client #2492871</div>
-							<div class="bottom-reviews__sub-title">Двойной интеграл уравновешивает расходящийся ряд. Эти слова совершенно справедливы, однако нормальное распределение осмысленно имитирует гипнотический рифф. Адажио реально просветляет равновероятный цикл. Живая сессия фактурна.</div>
-						</div>
-					</div>
-					<div class="reviews__slide body-reviews swiper-slide">
-						<div class="body-reviews__top top-reviews">
-							<div class="top-reviews__date">17.08.23</div>
-							<div class="top-reviews__rating rating rating_set">
-								<div class="rating__body">
-									<div class="rating__active"></div>
-									<div class="rating__items">
-										<input type="radio" class="rating__item" value="1" name="rating">
-										<input type="radio" class="rating__item" value="2" name="rating">
-										<input type="radio" class="rating__item" value="3" name="rating">
-										<input type="radio" class="rating__item" value="4" name="rating">
-										<input type="radio" class="rating__item" value="5" name="rating">
-									</div>
-								</div>
-								<div class="rating__value">5</div> <!-- Можно просто менять оценку, изменяя цифру -->
-							</div>
-						</div>
-						<div class="body-reviews__bottom bottom-reviews">
-							<div class="bottom-reviews__title">client #2492871</div>
-							<div class="bottom-reviews__sub-title">Двойной интеграл уравновешивает расходящийся ряд. Эти слова совершенно справедливы, однако нормальное распределение осмысленно имитирует гипнотический рифф. Адажио реально просветляет равновероятный цикл. Живая сессия фактурна.</div>
-						</div>
-					</div>
-					<div class="reviews__slide body-reviews swiper-slide">
-						<div class="body-reviews__top top-reviews">
-							<div class="top-reviews__date">17.08.23</div>
-							<div class="top-reviews__rating rating rating_set">
-								<div class="rating__body">
-									<div class="rating__active"></div>
-									<div class="rating__items">
-										<input type="radio" class="rating__item" value="1" name="rating">
-										<input type="radio" class="rating__item" value="2" name="rating">
-										<input type="radio" class="rating__item" value="3" name="rating">
-										<input type="radio" class="rating__item" value="4" name="rating">
-										<input type="radio" class="rating__item" value="5" name="rating">
-									</div>
-								</div>
-								<div class="rating__value">5</div> <!-- Можно просто менять оценку, изменяя цифру -->
-							</div>
-						</div>
-						<div class="body-reviews__bottom bottom-reviews">
-							<div class="bottom-reviews__title">client #2492871</div>
-							<div class="bottom-reviews__sub-title">Двойной интеграл уравновешивает расходящийся ряд. Эти слова совершенно справедливы, однако нормальное распределение осмысленно имитирует гипнотический рифф. Адажио реально просветляет равновероятный цикл. Живая сессия фактурна.</div>
-						</div>
-					</div>
-					<div class="reviews__slide body-reviews swiper-slide">
-						<div class="body-reviews__top top-reviews">
-							<div class="top-reviews__date">17.08.23</div>
-							<div class="top-reviews__rating rating rating_set">
-								<div class="rating__body">
-									<div class="rating__active"></div>
-									<div class="rating__items">
-										<input type="radio" class="rating__item" value="1" name="rating">
-										<input type="radio" class="rating__item" value="2" name="rating">
-										<input type="radio" class="rating__item" value="3" name="rating">
-										<input type="radio" class="rating__item" value="4" name="rating">
-										<input type="radio" class="rating__item" value="5" name="rating">
-									</div>
-								</div>
-								<div class="rating__value">5</div> <!-- Можно просто менять оценку, изменяя цифру -->
-							</div>
-						</div>
-						<div class="body-reviews__bottom bottom-reviews">
-							<div class="bottom-reviews__title">client #2492871</div>
-							<div class="bottom-reviews__sub-title">Двойной интеграл уравновешивает расходящийся ряд. Эти слова совершенно справедливы, однако нормальное распределение осмысленно имитирует гипнотический рифф. Адажио реально просветляет равновероятный цикл. Живая сессия фактурна.</div>
-						</div>
-					</div>
-					<div class="reviews__slide body-reviews swiper-slide">
-						<div class="body-reviews__top top-reviews">
-							<div class="top-reviews__date">17.08.23</div>
-							<div class="top-reviews__rating rating rating_set">
-								<div class="rating__body">
-									<div class="rating__active"></div>
-									<div class="rating__items">
-										<input type="radio" class="rating__item" value="1" name="rating">
-										<input type="radio" class="rating__item" value="2" name="rating">
-										<input type="radio" class="rating__item" value="3" name="rating">
-										<input type="radio" class="rating__item" value="4" name="rating">
-										<input type="radio" class="rating__item" value="5" name="rating">
-									</div>
-								</div>
-								<div class="rating__value">5</div> <!-- Можно просто менять оценку, изменяя цифру -->
-							</div>
-						</div>
-						<div class="body-reviews__bottom bottom-reviews">
-							<div class="bottom-reviews__title">client #2492871</div>
-							<div class="bottom-reviews__sub-title">Двойной интеграл уравновешивает расходящийся ряд. Эти слова совершенно справедливы, однако нормальное распределение осмысленно имитирует гипнотический рифф. Адажио реально просветляет равновероятный цикл. Живая сессия фактурна.</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="questions">
-		<div class="questions__container">
-			<div class="questions__body">
-				<h2 class="questions__title title  title--black">Часто задаваемые вопросы</h2>
-				<div data-spollers data-one-spoller class="questions__spollers spollers">
-					<details data-open class="questions__spollers-item spollers__item">
-						<summary class="questions__spollers-title spollers__title">
-							<p>В течение какого времени приходят деньги?</p>
-						</summary>
-						<div class="questions__spollers-body spollers__body">
-							<p>Двойной интеграл уравновешивает расходящийся ряд. Эти слова совершенно справедливы, однако нормальное распределение осмысленно имитирует гипнотический рифф. Адажио реально просветляет равновероятный цикл. Живая сессия фактурна.</p>
-						</div>
-					</details>
-					<details class="questions__spollers-item spollers__item">
-						<summary data-spoller-close class="questions__spollers-title spollers__title">
-							<p>Где я могу увидеть список всех валют, с которыми работаете?</p>
-						</summary>
-						<div class="questions__spollers-body spollers__body">
-							<p>Двойной интеграл уравновешивает расходящийся ряд. Эти слова совершенно справедливы, однако нормальное распределение осмысленно имитирует гипнотический рифф. Адажио реально просветляет равновероятный цикл. Живая сессия фактурна.</p>
-						</div>
-					</details>
-					<details class="questions__spollers-item spollers__item">
-						<summary data-spoller-close class="questions__spollers-title spollers__title">
-							<p>В течение какого времени приходят деньги?</p>
-						</summary>
-						<div class="questions__spollers-body spollers__body">
-							<p>Двойной интеграл уравновешивает расходящийся ряд. Эти слова совершенно справедливы, однако нормальное распределение осмысленно имитирует гипнотический рифф. Адажио реально просветляет равновероятный цикл. Живая сессия фактурна.</p>
-						</div>
-					</details>
-					<details class="questions__spollers-item spollers__item">
-						<summary data-spoller-close class="questions__spollers-title spollers__title">
-							<p>Какая максимальная сумма перевода?</p>
-						</summary>
-						<div class="questions__spollers-body spollers__body">
-							<p>Двойной интеграл уравновешивает расходящийся ряд. Эти слова совершенно справедливы, однако нормальное распределение осмысленно имитирует гипнотический рифф. Адажио реально просветляет равновероятный цикл. Живая сессия фактурна.</p>
-						</div>
-					</details>
-					<details class="questions__spollers-item spollers__item">
-						<summary data-spoller-close class="questions__spollers-title spollers__title">
-							<p>В течение какого времени приходят деньги?</p>
-						</summary>
-						<div class="questions__spollers-body spollers__body">
-							<p>Двойной интеграл уравновешивает расходящийся ряд. Эти слова совершенно справедливы, однако нормальное распределение осмысленно имитирует гипнотический рифф. Адажио реально просветляет равновероятный цикл. Живая сессия фактурна.</p>
-						</div>
-					</details>
-					<details class="questions__spollers-item spollers__item">
-						<summary data-spoller-close class="questions__spollers-title spollers__title">
-							<p>Где я могу увидеть список всех валют?</p>
-						</summary>
-						<div class="questions__spollers-body spollers__body">
-							<p>Двойной интеграл уравновешивает расходящийся ряд. Эти слова совершенно справедливы, однако нормальное распределение осмысленно имитирует гипнотический рифф. Адажио реально просветляет равновероятный цикл. Живая сессия фактурна.</p>
-						</div>
-					</details>
-					<details class="questions__spollers-item spollers__item">
-						<summary data-spoller-close class="questions__spollers-title spollers__title">
-							<p>В течение какого времени приходят деньги?</p>
-						</summary>
-						<div class="questions__spollers-body spollers__body">
-							<p>Двойной интеграл уравновешивает расходящийся ряд. Эти слова совершенно справедливы, однако нормальное распределение осмысленно имитирует гипнотический рифф. Адажио реально просветляет равновероятный цикл. Живая сессия фактурна.</p>
-						</div>
-					</details>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="best">
-		<div class="best__container">
-			<div class="best__image-ibg"><picture><source data-srcset="img/exchange/exchange.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/exchange/exchange.jpg" alt="image"></picture></div>
-			<div class="best__text">
-				<h4 class="best__title">Best Exchange</h4>
-				<div class="best__sub-title">
-					<p>Так же мы берём минимальную комиссию за белые переводы из США в Россию и из России в США. Всего 2%! (Вместо 15% по рынку) удобное и оперативное получение денежных средств наличными в крупных городах, банковский перевод , криптовалюты. Комиссия за переводы сомнительного происхождения начинается от 25%.</p>
-				</div>
-				<div class="best__transform">
-					<p>Минимальные суммы перевода:</p>
-					<p>- от $5000 для физ. Лиц</p>
-					<p>- от $25 000 для юр. Лиц</p>
-					<p>Переводы от $250 000 строго через гарант форума.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="contacts">
-		<div class="contacts__container">
-			<h2 class="contacts__title title title--black">Контакты</h2>
-			<div class="contacts__row">
-				<div class="contacts__column">
-					<a href="https://t.me/jp_morgan_stanley" target="_blank" class="contacts__button button">Сделать обмен</a>
-				</div>
-				<div class="contacts__column">
-					<a href="https://t.me/jp_morgan_stanley" target="_blank" class="contacts__button button">Задать вопрос саппорту</a>
-				</div>
-				<div class="contacts__column">
-					<a href="https://t.me/best_exchange_ru" target="_blank" class="contacts__button button">Наш канал</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="currency currency--center">
-		<div class="currency__container">
-			<div data-one-select class="currency__row currency__row--center">
-				<div class="currency__column currency__column--center">
-					<select data-scroll name="form[]" data-class-modif="third">
-						<option value="USD" selected data-asset="img/countries/usd.jpg">USD</option>
-						<option value="THD" data-asset="img/countries/thb.jpg">THD</option>
-						<option value="GBR" data-asset="img/countries/gbr.jpg">GBR</option>
-						<option value="EUR" data-asset="img/countries/eur.jpg">EUR</option>
-						<option value="CHY" data-asset="img/countries/chy.jpg">CHY</option>
-						<option value="CAD" data-asset="img/countries/cad.jpg">CAD</option>
-						<option value="AED" data-asset="img/countries/aed.jpg">AED</option>
-					</select>
-					<form action="#" class="currency__form currency__form--center">
-						<input autocomplete="off" type="text" name="form[]" placeholder="Отдаете" class="currency__input currency__input--center input">
-					</form>
-				</div>
-				<button type="button" class="currency__switch currency__switch--center _icon-arrows"></button>
-				<div class="currency__column currency__column--center">
-					<select data-scroll name="form[]" data-class-modif="fourth">
-						<option value="BTC" selected data-asset="img/cripto/btc.jpg" data-class="select-btc">
-							<p>BTC</p>
-						</option>
-						<option value="ETH" data-asset="img/cripto/eth.jpg">
-							<p>ETH</p>
-				</div>
-				</option>
-				<option value="TON" data-asset="img/cripto/ton.jpg">
-					<p>TON</p>
-			</div>
-			</option>
-			<option value="USDT" data-asset="img/cripto/usdt.jpg">
-				<p>USDT</p>
-		</div>
-		</option>
-		</select>
-		<form action="#" class="currency__form">
-			<input autocomplete="off" type="text" name="form[]" placeholder="Получаете" class="currency__input currency__input--center input">
-		</form>
-		</div>
-		<button type="button" data-popup="#popup" class="currency__button currency__button--center button button--fw">
-			<p>Отправить заявку</p> <img src="img/icons/telegram.svg" alt>
-		</button>
-		</div>
-		</div>
 	</section>
 	</main>
 	<footer class="footer">
@@ -574,8 +481,8 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js?_v=20230922222603" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
-	<script src="js/app.min.js?_v=20230922222603"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js?_v=20230926121041" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20230926121041"></script>
 </body>
 
 </html>

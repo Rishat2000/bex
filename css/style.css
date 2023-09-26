@@ -1232,6 +1232,7 @@ textarea.popup__input {
      -moz-column-gap: 0.625rem;
           column-gap: 0.625rem;
   white-space: nowrap;
+  position: absolute;
 }
 
 .standard__item {
@@ -1502,7 +1503,7 @@ textarea.popup__input {
 
 .bottom-reviews__sub-title {
   font-weight: 400;
-  line-height: 1.5714285714;
+  line-height: 1.7142857143;
   letter-spacing: 0.56px;
 }
 
@@ -1551,8 +1552,7 @@ textarea.popup__input {
 
 .spollers__body {
   margin-top: 0.625rem;
-  margin-left: 2.5rem;
-  line-height: 1.4375;
+  line-height: 1.5;
   letter-spacing: 0.64px;
   max-width: 48.75rem;
 }
@@ -1979,7 +1979,7 @@ textarea.popup__input {
   }
 
   .bottom-reviews__title {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 
   .bottom-reviews__sub-title {
@@ -2031,7 +2031,7 @@ textarea.popup__input {
   }
 
   .spollers__body {
-    margin-left: 2.5rem;
+    margin-left: 1.875rem;
   }
 
   .spollers__body {
@@ -3573,15 +3573,15 @@ textarea.popup__input {
     }
 }
 
-@supports (font-size: clamp( 0.75rem , 0.6792035398rem  +  0.3539823009vw , 1rem )) {
+@supports (font-size: clamp( 0.75rem , 0.6438053097rem  +  0.5309734513vw , 1.125rem )) {
     .bottom-reviews__title {
-      font-size: clamp( 0.75rem , 0.6792035398rem  +  0.3539823009vw , 1rem );
+      font-size: clamp( 0.75rem , 0.6438053097rem  +  0.5309734513vw , 1.125rem );
     }
 }
 
-@supports not (font-size: clamp( 0.75rem , 0.6792035398rem  +  0.3539823009vw , 1rem )) {
+@supports not (font-size: clamp( 0.75rem , 0.6438053097rem  +  0.5309734513vw , 1.125rem )) {
     .bottom-reviews__title {
-      font-size: calc(0.75rem + 0.25 * (100vw - 20rem) / 70.625);
+      font-size: calc(0.75rem + 0.375 * (100vw - 20rem) / 70.625);
     }
 }
 
@@ -3729,15 +3729,15 @@ textarea.popup__input {
     }
 }
 
-@supports (margin-left: clamp( 0.0000000625rem , -0.7079645216rem  +  3.5398229204vw , 2.5rem )) {
+@supports (margin-left: clamp( 0.0000000625rem , -0.5309733711rem  +  2.6548671681vw , 1.875rem )) {
     .spollers__body {
-      margin-left: clamp( 0.0000000625rem , -0.7079645216rem  +  3.5398229204vw , 2.5rem );
+      margin-left: clamp( 0.0000000625rem , -0.5309733711rem  +  2.6548671681vw , 1.875rem );
     }
 }
 
-@supports not (margin-left: clamp( 0.0000000625rem , -0.7079645216rem  +  3.5398229204vw , 2.5rem )) {
+@supports not (margin-left: clamp( 0.0000000625rem , -0.5309733711rem  +  2.6548671681vw , 1.875rem )) {
     .spollers__body {
-      margin-left: calc(0.0000000625rem + 2.4999999375 * (100vw - 20rem) / 70.625);
+      margin-left: calc(0.0000000625rem + 1.8749999375 * (100vw - 20rem) / 70.625);
     }
 }
 
