@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap);
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:500italic,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700&display=swap);
 
 @charset "UTF-8";
 
@@ -2417,7 +2417,7 @@ textarea.popup__input {
   }
 
   .questions--solo {
-    padding-bottom: 0.625rem;
+    padding-bottom: 1.25rem;
   }
 
   .questions__body {
@@ -3674,15 +3674,15 @@ textarea.popup__input {
     }
 }
 
-@supports (padding-bottom: clamp( 0.625rem , -0.171460177rem  +  3.982300885vw , 3.4375rem )) {
+@supports (padding-bottom: clamp( 1.25rem , 0.6305309735rem  +  3.0973451327vw , 3.4375rem )) {
     .questions--solo {
-      padding-bottom: clamp( 0.625rem , -0.171460177rem  +  3.982300885vw , 3.4375rem );
+      padding-bottom: clamp( 1.25rem , 0.6305309735rem  +  3.0973451327vw , 3.4375rem );
     }
 }
 
-@supports not (padding-bottom: clamp( 0.625rem , -0.171460177rem  +  3.982300885vw , 3.4375rem )) {
+@supports not (padding-bottom: clamp( 1.25rem , 0.6305309735rem  +  3.0973451327vw , 3.4375rem )) {
     .questions--solo {
-      padding-bottom: calc(0.625rem + 2.8125 * (100vw - 20rem) / 70.625);
+      padding-bottom: calc(1.25rem + 2.1875 * (100vw - 20rem) / 70.625);
     }
 }
 

@@ -4603,7 +4603,7 @@
                         spaceBetween: 20
                     },
                     1881: {
-                        slidesPerView: 4.4,
+                        slidesPerView: 4.2,
                         spaceBetween: 20
                     }
                 },
