@@ -4563,7 +4563,7 @@
                 modules: [ Navigation ],
                 observer: true,
                 observeParents: true,
-                slidesPerView: 4.6,
+                slidesPerView: 4.4,
                 spaceBetween: 20,
                 speed: 800,
                 touchRatio: 1,
@@ -4598,12 +4598,12 @@
                         slidesPerView: 3.4,
                         spaceBetween: 20
                     },
-                    1541: {
+                    1641: {
                         slidesPerView: 4.1,
                         spaceBetween: 20
                     },
-                    1681: {
-                        slidesPerView: 4.6,
+                    1881: {
+                        slidesPerView: 4.4,
                         spaceBetween: 20
                     }
                 },

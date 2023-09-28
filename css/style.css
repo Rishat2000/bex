@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap);
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500italic,700&display=swap);
 
 @charset "UTF-8";
 
@@ -1511,15 +1511,18 @@ textarea.popup__input {
   position: relative;
 }
 
-.questions::before {
+.questions--blue::before {
   content: "";
   position: absolute;
-  width: 100%;
   top: 0;
   left: 0;
   width: 100%;
   height: 9.75rem;
   z-index: -1;
+  background-color: var(--blueLigthColor);
+}
+
+.questions--solo {
   background-color: var(--blueLigthColor);
 }
 
@@ -1529,10 +1532,17 @@ textarea.popup__input {
   border-radius: 1.875rem;
   border: 1px solid #e9f3ff;
   background: var(--whiteColor);
-  -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   margin: 0 auto;
-  padding: 3.75rem 5rem;
+}
+
+.questions__spollers-body--solo {
+  padding-top: 0.9375rem;
+}
+
+.questions__spollers-body--solo p:not(:last-child) {
+  margin-bottom: 0.9375rem;
 }
 
 .spollers__item {
@@ -1685,23 +1695,7 @@ textarea.popup__input {
   display: none !important;
 }
 
-@media (min-width: 52.8125em) {
-  .header {
-    border-bottom: 1px solid #1b5ca9;
-  }
-}
-
 @media (min-width: 52.875em) {
-  .header__container {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-grid-columns: 90px 1fr 90px;
-    grid-template-columns: 90px 1fr 90px;
-  }
-
   .footer__container {
     display: -ms-grid;
     display: grid;
@@ -1711,6 +1705,24 @@ textarea.popup__input {
     -ms-grid-columns: 90px 1fr 90px;
     grid-template-columns: 90px 1fr 90px;
     padding-bottom: 2.8125rem;
+  }
+}
+
+@media (min-width: 69.5em) {
+  .header {
+    border-bottom: 1px solid #1b5ca9;
+  }
+}
+
+@media (min-width: 69.4375em) {
+  .header__container {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: 90px 1fr 90px;
+    grid-template-columns: 90px 1fr 90px;
   }
 }
 
@@ -1999,8 +2011,16 @@ textarea.popup__input {
     font-size: 0.875rem;
   }
 
-  .questions {
+  .questions--blue {
     padding-bottom: 5.9375rem;
+  }
+
+  .questions--solo {
+    padding-top: 3.4375rem;
+  }
+
+  .questions--solo {
+    padding-bottom: 3.4375rem;
   }
 
   .questions__body {
@@ -2052,7 +2072,11 @@ textarea.popup__input {
   }
 
   .best {
-    padding-top: 7.5625rem;
+    padding-top: 3.125rem;
+  }
+
+  .best {
+    padding-bottom: 3.125rem;
   }
 
   .best__image-ibg {
@@ -2384,8 +2408,16 @@ textarea.popup__input {
     font-size: 0.625rem;
   }
 
-  .questions {
+  .questions--blue {
     padding-bottom: 0.9375rem;
+  }
+
+  .questions--solo {
+    padding-top: 1.25rem;
+  }
+
+  .questions--solo {
+    padding-bottom: 0.625rem;
   }
 
   .questions__body {
@@ -2438,6 +2470,10 @@ textarea.popup__input {
 
   .best {
     padding-top: 0.9375rem;
+  }
+
+  .best {
+    padding-bottom: 1.25rem;
   }
 
   .best__image-ibg {
@@ -2498,52 +2534,7 @@ textarea.popup__input {
   }
 }
 
-@media (max-width: 61.99875em) {
-  .exchange__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .exchange__sub-title {
-    text-align: center;
-  }
-}
-
-@media (max-width: 61.9375em) {
-  .exchange__text {
-    max-width: 60rem;
-    margin-top: 0rem;
-  }
-}
-
-@media (max-width: 61.99875em) and (max-width: 20em) {
-  .exchange__image-ibg {
-    width: 18.75rem;
-  }
-
-  .exchange__image-ibg {
-    padding-bottom: 13.125rem;
-  }
-}
-
-@media (max-width: 61.9375em) and (max-width: 20em) {
-  .exchange__title {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 53.75em) {
-  .header-spollers__body {
-    left: -0.9375rem;
-  }
-}
-
-@media (max-width: 52.8125em) {
+@media (max-width: 69.4375em) {
   .header-spollers {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2571,6 +2562,9 @@ textarea.popup__input {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .header__logo {
@@ -2715,7 +2709,60 @@ textarea.popup__input {
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
   }
+}
 
+@media (max-width: 69.4375em) and (any-hover: none) {
+  .icon-menu {
+    cursor: default;
+  }
+}
+
+@media (max-width: 61.99875em) {
+  .exchange__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .exchange__sub-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 61.9375em) {
+  .exchange__text {
+    max-width: 60rem;
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 61.99875em) and (max-width: 20em) {
+  .exchange__image-ibg {
+    width: 18.75rem;
+  }
+
+  .exchange__image-ibg {
+    padding-bottom: 13.125rem;
+  }
+}
+
+@media (max-width: 61.9375em) and (max-width: 20em) {
+  .exchange__title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 53.75em) {
+  .header-spollers__body {
+    left: -0.9375rem;
+  }
+}
+
+@media (max-width: 52.8125em) {
   .footer__container {
     display: none;
   }
@@ -2730,12 +2777,6 @@ textarea.popup__input {
 
   .menu-open .footer__logo::before {
     color: #6085af;
-  }
-}
-
-@media (max-width: 52.8125em) and (any-hover: none) {
-  .icon-menu {
-    cursor: default;
   }
 }
 
@@ -3610,14 +3651,38 @@ textarea.popup__input {
 }
 
 @supports (padding-bottom: clamp( 0.9375rem , -0.4784292035rem  +  7.0796460177vw , 5.9375rem )) {
-    .questions {
+    .questions--blue {
       padding-bottom: clamp( 0.9375rem , -0.4784292035rem  +  7.0796460177vw , 5.9375rem );
     }
 }
 
 @supports not (padding-bottom: clamp( 0.9375rem , -0.4784292035rem  +  7.0796460177vw , 5.9375rem )) {
-    .questions {
+    .questions--blue {
       padding-bottom: calc(0.9375rem + 5 * (100vw - 20rem) / 70.625);
+    }
+}
+
+@supports (padding-top: clamp( 1.25rem , 0.6305309735rem  +  3.0973451327vw , 3.4375rem )) {
+    .questions--solo {
+      padding-top: clamp( 1.25rem , 0.6305309735rem  +  3.0973451327vw , 3.4375rem );
+    }
+}
+
+@supports not (padding-top: clamp( 1.25rem , 0.6305309735rem  +  3.0973451327vw , 3.4375rem )) {
+    .questions--solo {
+      padding-top: calc(1.25rem + 2.1875 * (100vw - 20rem) / 70.625);
+    }
+}
+
+@supports (padding-bottom: clamp( 0.625rem , -0.171460177rem  +  3.982300885vw , 3.4375rem )) {
+    .questions--solo {
+      padding-bottom: clamp( 0.625rem , -0.171460177rem  +  3.982300885vw , 3.4375rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 0.625rem , -0.171460177rem  +  3.982300885vw , 3.4375rem )) {
+    .questions--solo {
+      padding-bottom: calc(0.625rem + 2.8125 * (100vw - 20rem) / 70.625);
     }
 }
 
@@ -3765,15 +3830,27 @@ textarea.popup__input {
     }
 }
 
-@supports (padding-top: clamp( 0.9375rem , -0.9386061947rem  +  9.3805309735vw , 7.5625rem )) {
+@supports (padding-top: clamp( 0.9375rem , 0.3180309735rem  +  3.0973451327vw , 3.125rem )) {
     .best {
-      padding-top: clamp( 0.9375rem , -0.9386061947rem  +  9.3805309735vw , 7.5625rem );
+      padding-top: clamp( 0.9375rem , 0.3180309735rem  +  3.0973451327vw , 3.125rem );
     }
 }
 
-@supports not (padding-top: clamp( 0.9375rem , -0.9386061947rem  +  9.3805309735vw , 7.5625rem )) {
+@supports not (padding-top: clamp( 0.9375rem , 0.3180309735rem  +  3.0973451327vw , 3.125rem )) {
     .best {
-      padding-top: calc(0.9375rem + 6.625 * (100vw - 20rem) / 70.625);
+      padding-top: calc(0.9375rem + 2.1875 * (100vw - 20rem) / 70.625);
+    }
+}
+
+@supports (padding-bottom: clamp( 1.25rem , 0.7190265487rem  +  2.6548672566vw , 3.125rem )) {
+    .best {
+      padding-bottom: clamp( 1.25rem , 0.7190265487rem  +  2.6548672566vw , 3.125rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.25rem , 0.7190265487rem  +  2.6548672566vw , 3.125rem )) {
+    .best {
+      padding-bottom: calc(1.25rem + 1.875 * (100vw - 20rem) / 70.625);
     }
 }
 
