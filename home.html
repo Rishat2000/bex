@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230928163220">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230929195143">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,38 +64,38 @@
 					<h2 class="currency__title title"> Обмен валюты </h2>
 					<div data-one-select class="currency__row">
 						<div class="currency__column">
-							<select data-scroll name="form[]" data-class-modif="first">
-								<option value="USD" selected data-asset="img/countries/usd.jpg">USD</option>
-								<option value="RUB" data-asset="img/countries/russia.jpg">RUB</option>
-								<option value="THD" data-asset="img/countries/thb.jpg">THD</option>
-								<option value="GBR" data-asset="img/countries/gbr.jpg">GBR</option>
-								<option value="EUR" data-asset="img/countries/eur.jpg">EUR</option>
-								<option value="CHY" data-asset="img/countries/chy.jpg">CHY</option>
-								<option value="CAD" data-asset="img/countries/cad.jpg">CAD</option>
-								<option value="AED" data-asset="img/countries/aed.jpg">AED</option>
+							<select data-scroll name="form[]" data-class-modif="first" class="currency__select_top-curr currency__select">
+								<option value="usd" selected data-asset="img/countries/usd.jpg">USD</option>
+								<option value="rub" data-asset="img/countries/russia.jpg">RUB</option>
+								<option value="thb" data-asset="img/countries/thb.jpg">THB</option>
+								<option value="gbp" data-asset="img/countries/gbr.jpg">GBP</option>
+								<option value="eur" data-asset="img/countries/eur.jpg">EUR</option>
+								<option value="cny" data-asset="img/countries/chy.jpg">CNY</option>
+								<option value="cad" data-asset="img/countries/cad.jpg">CAD</option>
+								<option value="aed" data-asset="img/countries/aed.jpg">AED</option>
 							</select>
 							<form action="#" class="currency__form">
-								<input autocomplete="off" type="text" name="form[]" placeholder="Отдаете" class="currency__input input">
+								<input disabled autocomplete="off" type="text" name="form[]" placeholder="Отдаете" class="currency__input currency__input_top input">
 							</form>
 						</div>
 						<button type="button" class="currency__switch _icon-arrows"></button>
 						<div class="currency__column">
-							<select data-scroll name="form[]" data-class-modif="second">
-								<option value="BTC" selected data-asset="img/cripto/btc.jpg" data-class="select-btc">
+							<select data-scroll name="form[]" data-class-modif="second" class="currency__select_top-crypto currency__select">
+								<option value="bitcoin" selected data-asset="img/cripto/btc.jpg" data-class="select-btc">
 									<p>BTC</p>
 								</option>
-								<option value="ETH" data-asset="img/cripto/eth.jpg">
+								<option value="ethereum" data-asset="img/cripto/eth.jpg">
 									<p>ETH</p>
 								</option>
-								<option value="TON" data-asset="img/cripto/ton.jpg">
+								<option value="the-open-network" data-asset="img/cripto/ton.jpg">
 									<p>TON</p>
 								</option>
-								<option value="USDT" data-asset="img/cripto/usdt.jpg">
+								<option value="tether" data-asset="img/cripto/usdt.jpg">
 									<p>USDT</p>
 								</option>
 							</select>
 							<form action="#" class="currency__form">
-								<input autocomplete="off" type="text" name="form[]" placeholder="Получаете" class="currency__input input">
+								<input disabled autocomplete="off" type="text" name="form[]" placeholder="Получаете" class="currency__input currency__input_top input">
 							</form>
 						</div>
 						<button type="button" data-popup="#popup" class="currency__button button button--fw">
@@ -563,38 +563,38 @@
 				<div class="currency__container">
 					<div data-one-select class="currency__row currency__row--center">
 						<div class="currency__column currency__column--center">
-							<select data-simplebar data-scroll name="form[]" data-class-modif="third">
-								<option value="USD" selected data-asset="img/countries/usd.jpg">USD</option>
-								<option value="RUB" data-asset="img/countries/russia.jpg">RUB</option>
-								<option value="THD" data-asset="img/countries/thb.jpg">THD</option>
-								<option value="GBR" data-asset="img/countries/gbr.jpg">GBR</option>
-								<option value="EUR" data-asset="img/countries/eur.jpg">EUR</option>
-								<option value="CHY" data-asset="img/countries/chy.jpg">CHY</option>
-								<option value="CAD" data-asset="img/countries/cad.jpg">CAD</option>
-								<option value="AED" data-asset="img/countries/aed.jpg">AED</option>
+							<select data-scroll name="form[]" data-class-modif="third" class="currency__select_bottom-curr currency__select">
+								<option value="usd" selected data-asset="img/countries/usd.jpg">USD</option>
+								<option value="rub" data-asset="img/countries/russia.jpg">RUB</option>
+								<option value="thb" data-asset="img/countries/thb.jpg">THB</option>
+								<option value="gbp" data-asset="img/countries/gbr.jpg">GBP</option>
+								<option value="eur" data-asset="img/countries/eur.jpg">EUR</option>
+								<option value="cny" data-asset="img/countries/chy.jpg">CNY</option>
+								<option value="cad" data-asset="img/countries/cad.jpg">CAD</option>
+								<option value="aed" data-asset="img/countries/aed.jpg">AED</option>
 							</select>
 							<form action="#" class="currency__form currency__form--center">
-								<input autocomplete="off" type="text" name="form[]" placeholder="Отдаете" class="currency__input currency__input--center input">
+								<input disabled autocomplete="off" type="text" name="form[]" placeholder="Отдаете" class="currency__input currency__input--center input">
 							</form>
 						</div>
 						<button type="button" class="currency__switch currency__switch--center _icon-arrows"></button>
 						<div class="currency__column currency__column--center">
-							<select data-scroll name="form[]" data-class-modif="fourth">
-								<option value="BTC" selected data-asset="img/cripto/btc.jpg" data-class="select-btc">
+							<select data-scroll name="form[]" data-class-modif="fourth" class="currency__select_bottom-crypto currency__select">
+								<option value="bitcoin" selected data-asset="img/cripto/btc.jpg" data-class="select-btc">
 									<p>BTC</p>
 								</option>
-								<option value="ETH" data-asset="img/cripto/eth.jpg">
+								<option value="ethereum" data-asset="img/cripto/eth.jpg">
 									<p>ETH</p>
 								</option>
-								<option value="TON" data-asset="img/cripto/ton.jpg">
+								<option value="the-open-network" data-asset="img/cripto/ton.jpg">
 									<p>TON</p>
 								</option>
-								<option value="USDT" data-asset="img/cripto/usdt.jpg">
+								<option value="tether" data-asset="img/cripto/usdt.jpg">
 									<p>USDT</p>
 								</option>
 							</select>
 							<form action="#" class="currency__form">
-								<input autocomplete="off" type="text" name="form[]" placeholder="Получаете" class="currency__input currency__input--center input">
+								<input disabled autocomplete="off" type="text" name="form[]" placeholder="Получаете" class="currency__input currency__input--center input">
 							</form>
 						</div>
 						<button type="button" data-popup="#popup" class="currency__button currency__button--center button button--fw">
@@ -642,7 +642,8 @@
 				<button data-close type="button" class="popup__close"></button>
 				<div class="popup__text">
 					<form action="#" class="popup__form">
-						<textarea required name="message" data-autoheight data-autoheight-min="100" class="popup__input">Здравствуйте, хочу совершить обмен!</textarea>
+						<textarea required name="username" placeholder="Your telegram username - @example" data-autoheight data-autoheight-min="90" class="popup__input"></textarea>
+						<textarea required name="message" data-autoheight data-autoheight-min="90" class="popup__input">Здравствуйте, хочу совершить обмен!</textarea>
 						<button class="popup__button button button--fw" type="submit">
 							<p>Отправить заявку</p> <img src="img/icons/telegram.svg" alt>
 						</button>
@@ -651,8 +652,8 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js?_v=20230928163220" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
-	<script src="js/app.min.js?_v=20230928163220"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js?_v=20230929195143" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20230929195143"></script>
 </body>
 
 </html>
